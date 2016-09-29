@@ -10,14 +10,37 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Accediendo_a_la_nube_con_iOS_Semana_3_CalcIMCAW_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Peso" id="AdZ-G0-gJC"/>
-                        <label alignment="left" text="Estatura" id="mNj-Cd-F9m"/>
-                        <slider width="1" alignment="left" value="1" maximum="200" steps="200" id="iR6-1r-s7t"/>
-                        <slider width="1" alignment="left" value="50" minimum="50" maximum="230" steps="180" id="lKf-ft-s98"/>
+                        <group width="1" alignment="left" id="B8A-YL-z4m">
+                            <items>
+                                <label width="65.5" alignment="left" text="Peso" id="AdZ-G0-gJC"/>
+                                <label width="69" alignment="left" id="FId-XY-tCM"/>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="1" maximum="200" steps="200" id="iR6-1r-s7t">
+                            <connections>
+                                <action selector="nuevoValorPeso:" destination="AgC-eL-Hgc" id="Ft8-Er-fwQ"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="Uxu-Ye-j3M">
+                            <items>
+                                <label width="65.5" alignment="left" text="Estatura" id="mNj-Cd-F9m"/>
+                                <label width="69" alignment="left" id="Mxw-pK-G8k"/>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="50" minimum="50" maximum="230" steps="180" id="lKf-ft-s98">
+                            <connections>
+                                <action selector="nuevoValorEstatura:" destination="AgC-eL-Hgc" id="bl7-Pa-ZnR"/>
+                            </connections>
+                        </slider>
                         <button width="1" alignment="left" title="Calcular" id="YGO-6O-Hyf"/>
                     </items>
+                    <connections>
+                        <outlet property="valorEstatura" destination="Mxw-pK-G8k" id="VUS-dd-5Eg"/>
+                        <outlet property="valorPeso" destination="FId-XY-tCM" id="hBm-9n-tEl"/>
+                    </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="448" y="397"/>
         </scene>
     </scenes>
 </document>
