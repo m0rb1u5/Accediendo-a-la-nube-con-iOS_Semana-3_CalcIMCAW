@@ -16,7 +16,7 @@
                                 <label width="69" alignment="left" id="FId-XY-tCM"/>
                             </items>
                         </group>
-                        <slider width="1" alignment="left" value="1" maximum="200" steps="200" id="iR6-1r-s7t">
+                        <slider width="1" alignment="left" value="50" minimum="50" maximum="200" steps="150" id="iR6-1r-s7t">
                             <connections>
                                 <action selector="nuevoValorPeso:" destination="AgC-eL-Hgc" id="Ft8-Er-fwQ"/>
                             </connections>
@@ -32,7 +32,11 @@
                                 <action selector="nuevoValorEstatura:" destination="AgC-eL-Hgc" id="bl7-Pa-ZnR"/>
                             </connections>
                         </slider>
-                        <button width="1" alignment="left" title="Calcular" id="YGO-6O-Hyf"/>
+                        <button width="1" alignment="left" title="Calcular" id="YGO-6O-Hyf">
+                            <connections>
+                                <action selector="accionCalcular" destination="AgC-eL-Hgc" id="NFv-0a-G6u"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="valorEstatura" destination="Mxw-pK-G8k" id="VUS-dd-5Eg"/>

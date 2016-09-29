@@ -13,6 +13,8 @@ import Foundation
 class InterfaceController: WKInterfaceController {
     @IBOutlet var valorPeso: WKInterfaceLabel!
     @IBOutlet var valorEstatura: WKInterfaceLabel!
+    var pesoActual: Float = 1
+    var estaturaActual: Float = 1
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -28,9 +30,19 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     @IBAction func nuevoValorPeso(value: Float) {
-        valorPeso.setText(String(value))
+        pesoActual = value;
+        valorPeso.setText(String(pesoActual))
     }
     @IBAction func nuevoValorEstatura(value: Float) {
-        valorEstatura.setText(String(value))
+        estaturaActual = value/100
+        valorEstatura.setText(String(estaturaActual))
+    }
+    func calculoIMC(p: Float, e: Float) -> Float {
+        let IMC = p/(e*e)
+        return IMC
+    }
+    @IBAction func accionCalcular() {
+        let resultado = calculoIMC(pesoActual, e: estaturaActual)
+        print(resultado)
     }
 }
