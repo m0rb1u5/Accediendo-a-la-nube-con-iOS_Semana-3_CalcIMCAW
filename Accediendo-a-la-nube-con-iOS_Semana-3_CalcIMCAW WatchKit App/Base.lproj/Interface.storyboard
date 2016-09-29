@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10102" systemVersion="15G31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10030"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Accediendo_a_la_nube_con_iOS_Semana_3_CalcIMCAW_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Peso" id="AdZ-G0-gJC"/>
+                        <label alignment="left" text="Estatura" id="mNj-Cd-F9m"/>
+                        <slider width="1" alignment="left" value="1" maximum="200" steps="200" id="iR6-1r-s7t"/>
+                        <slider width="1" alignment="left" value="50" minimum="50" maximum="230" steps="180" id="lKf-ft-s98"/>
+                        <button width="1" alignment="left" title="Calcular" id="YGO-6O-Hyf"/>
+                    </items>
+                </controller>
             </objects>
         </scene>
     </scenes>
