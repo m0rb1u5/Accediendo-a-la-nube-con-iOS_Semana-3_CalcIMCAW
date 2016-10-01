@@ -35,6 +35,7 @@
                         <button width="1" alignment="left" title="Calcular" id="YGO-6O-Hyf">
                             <connections>
                                 <action selector="accionCalcular" destination="AgC-eL-Hgc" id="NFv-0a-G6u"/>
+                                <segue destination="UjS-Et-qTs" kind="push" id="IAk-4f-fu9"/>
                             </connections>
                         </button>
                     </items>
@@ -45,6 +46,18 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="448" y="397"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="MEN-Tm-rpj">
+            <objects>
+                <controller id="UjS-Et-qTs">
+                    <items>
+                        <label alignment="left" text="Masa corporal" id="WP5-ZI-L9X"/>
+                        <label alignment="left" id="4MG-EH-3aD"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="782" y="388"/>
         </scene>
     </scenes>
 </document>
