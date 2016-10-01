@@ -35,7 +35,6 @@
                         <button width="1" alignment="left" title="Calcular" id="YGO-6O-Hyf">
                             <connections>
                                 <action selector="accionCalcular" destination="AgC-eL-Hgc" id="NFv-0a-G6u"/>
-                                <segue destination="UjS-Et-qTs" kind="push" id="IAk-4f-fu9"/>
                             </connections>
                         </button>
                     </items>
@@ -47,14 +46,17 @@
             </objects>
             <point key="canvasLocation" x="448" y="397"/>
         </scene>
-        <!--Interface Controller-->
+        <!--IdentificadorValor-->
         <scene sceneID="MEN-Tm-rpj">
             <objects>
-                <controller id="UjS-Et-qTs">
+                <controller identifier="IdentificadorValor" id="UjS-Et-qTs" customClass="VistaDetalle" customModule="Accediendo_a_la_nube_con_iOS_Semana_3_CalcIMCAW_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Masa corporal" id="WP5-ZI-L9X"/>
-                        <label alignment="left" id="4MG-EH-3aD"/>
+                        <label alignment="left" id="4MG-EH-3aD" userLabel="Etiqueta Resultado"/>
                     </items>
+                    <connections>
+                        <outlet property="etiquetaResultado" destination="4MG-EH-3aD" id="v1j-69-vXz"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="782" y="388"/>

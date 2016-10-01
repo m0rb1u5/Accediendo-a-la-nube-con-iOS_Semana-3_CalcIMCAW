@@ -19,6 +19,8 @@
 		940BDE991D9D4EC80052B3EC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940BDE981D9D4EC80052B3EC /* InterfaceController.swift */; };
 		940BDE9B1D9D4EC80052B3EC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940BDE9A1D9D4EC80052B3EC /* ExtensionDelegate.swift */; };
 		940BDE9D1D9D4EC90052B3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940BDE9C1D9D4EC90052B3EC /* Assets.xcassets */; };
+		9439723D1D9FB391004F46DA /* Valor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439723C1D9FB391004F46DA /* Valor.swift */; };
+		9439723F1D9FB4C0004F46DA /* VistaDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439723E1D9FB4C0004F46DA /* VistaDetalle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		940BDE9A1D9D4EC80052B3EC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		940BDE9C1D9D4EC90052B3EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940BDE9E1D9D4EC90052B3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9439723C1D9FB391004F46DA /* Valor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Valor.swift; sourceTree = "<group>"; };
+		9439723E1D9FB4C0004F46DA /* VistaDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VistaDetalle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				940BDE981D9D4EC80052B3EC /* InterfaceController.swift */,
+				9439723E1D9FB4C0004F46DA /* VistaDetalle.swift */,
 				940BDE9A1D9D4EC80052B3EC /* ExtensionDelegate.swift */,
+				9439723C1D9FB391004F46DA /* Valor.swift */,
 				940BDE9C1D9D4EC90052B3EC /* Assets.xcassets */,
 				940BDE9E1D9D4EC90052B3EC /* Info.plist */,
 			);
@@ -298,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9439723D1D9FB391004F46DA /* Valor.swift in Sources */,
 				940BDE9B1D9D4EC80052B3EC /* ExtensionDelegate.swift in Sources */,
 				940BDE991D9D4EC80052B3EC /* InterfaceController.swift in Sources */,
+				9439723F1D9FB4C0004F46DA /* VistaDetalle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +538,7 @@
 				940BDEA31D9D4EC90052B3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		940BDEA51D9D4EC90052B3EC /* Build configuration list for PBXNativeTarget "Accediendo-a-la-nube-con-iOS_Semana-3_CalcIMCAW WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +547,7 @@
 				940BDEA71D9D4EC90052B3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		940BDEA91D9D4EC90052B3EC /* Build configuration list for PBXNativeTarget "Accediendo-a-la-nube-con-iOS_Semana-3_CalcIMCAW" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +556,7 @@
 				940BDEAB1D9D4EC90052B3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

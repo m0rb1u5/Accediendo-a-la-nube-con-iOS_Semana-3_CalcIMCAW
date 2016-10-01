@@ -43,6 +43,8 @@ class InterfaceController: WKInterfaceController {
     }
     @IBAction func accionCalcular() {
         let resultado = calculoIMC(pesoActual, e: estaturaActual)
+        let valorContexto = Valor(descripcion: "Peso normal", valorIMC: resultado)
+        pushControllerWithName("IdentificadorValor", context: valorContexto)
         print(resultado)
     }
 }
